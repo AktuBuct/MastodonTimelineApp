@@ -11,19 +11,23 @@ import UIKit
 class SplashVc: UIViewController {
 
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    var reachabilityManager: ReachabilityManager?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
-        activityIndicator.startAnimating()
+        if reachabilityManager == nil {
+            reachabilityManager = ReachabilityManager(with: self)
+        }
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    func loadData() {
+        activityIndicator.startAnimating()
 
         DataManager.sharedManager.getStatusCards { (success) in
             self.activityIndicator.stopAnimating()
             self.performSegue(withIdentifier: "InitialSegue", sender: nil)
         }
     }
+
 }

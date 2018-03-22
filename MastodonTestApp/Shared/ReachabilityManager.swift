@@ -12,10 +12,10 @@ import Reachability
 class ReachabilityManager {
 
     let reachability = Reachability()
-    var rootController: UIViewController?
+    var rootController: SplashVc?
     var alert: UIAlertController?
 
-    init(with controller: UIViewController) {
+    init(with controller: SplashVc) {
         createReachability()
         rootController = controller
     }
@@ -26,6 +26,7 @@ class ReachabilityManager {
         
         switch reachability.connection {
         case .wifi, .cellular:
+            rootController?.loadData()
             alert?.dismiss(animated: true, completion: nil)
             reachability.stopNotifier()
 
