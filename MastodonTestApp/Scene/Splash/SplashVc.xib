@@ -31,9 +31,9 @@
                 <constraints>
                     <constraint firstItem="YDm-Wx-sA8" firstAttribute="width" secondItem="Hkj-hS-pey" secondAttribute="width" id="8WS-cZ-Lvv"/>
                     <constraint firstItem="tbd-u8-Tdi" firstAttribute="top" secondItem="Yqd-Eq-HkB" secondAttribute="top" constant="60" id="A7h-Vz-804"/>
-                    <constraint firstItem="YDm-Wx-sA8" firstAttribute="centerY" secondItem="Yqd-Eq-HkB" secondAttribute="centerY" id="Lib-Cj-veF"/>
+                    <constraint firstItem="YDm-Wx-sA8" firstAttribute="centerY" secondItem="Yqd-Eq-HkB" secondAttribute="centerY" constant="-5" id="Lib-Cj-veF"/>
                     <constraint firstItem="tbd-u8-Tdi" firstAttribute="centerX" secondItem="YDm-Wx-sA8" secondAttribute="centerX" id="Nj1-cD-dNZ"/>
-                    <constraint firstItem="YDm-Wx-sA8" firstAttribute="height" secondItem="Hkj-hS-pey" secondAttribute="height" id="n1E-i2-O65"/>
+                    <constraint firstItem="YDm-Wx-sA8" firstAttribute="height" secondItem="Hkj-hS-pey" secondAttribute="height" constant="10" id="n1E-i2-O65"/>
                     <constraint firstItem="YDm-Wx-sA8" firstAttribute="centerX" secondItem="Yqd-Eq-HkB" secondAttribute="centerX" id="vtd-1x-yfU"/>
                 </constraints>
                 <viewLayoutGuide key="safeArea" id="Yqd-Eq-HkB"/>

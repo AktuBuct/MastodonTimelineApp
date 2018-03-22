@@ -31,8 +31,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wap-yB-lRK" firstAttribute="centerX" secondItem="qjm-1I-XZQ" secondAttribute="centerX" id="EOU-Cw-AMe"/>
-                            <constraint firstItem="qjm-1I-XZQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="FXJ-oa-BOu"/>
-                            <constraint firstItem="qjm-1I-XZQ" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="PzP-ac-eO4"/>
+                            <constraint firstItem="qjm-1I-XZQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-5" id="FXJ-oa-BOu"/>
+                            <constraint firstItem="qjm-1I-XZQ" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" constant="10" id="PzP-ac-eO4"/>
                             <constraint firstItem="wap-yB-lRK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="VkL-VT-r8Q"/>
                             <constraint firstItem="qjm-1I-XZQ" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="X3o-f6-hOb"/>
                             <constraint firstItem="qjm-1I-XZQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pYW-DH-bBL"/>
