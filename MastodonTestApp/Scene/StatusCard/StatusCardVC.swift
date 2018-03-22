@@ -36,7 +36,9 @@ class StatusCardVC: UIViewController {
 
 }
 
-private extension StatusCardVC {
+private typealias ConfigureInterface = StatusCardVC
+
+private extension ConfigureInterface {
 
     func configureCollectionView() {
         let minSize = min(view.bounds.height, view.bounds.width)

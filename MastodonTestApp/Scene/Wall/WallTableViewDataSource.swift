@@ -17,7 +17,6 @@ class WallTableViewDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(rootController.statusCards.count)
         return rootController.statusCards.count
     }
 

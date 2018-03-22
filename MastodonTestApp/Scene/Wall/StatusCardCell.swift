@@ -21,6 +21,7 @@ class StatusCardCell: UITableViewCell {
         acctLabel.text = "@" + statusCard.account.acct
         contentLabel.attributedText = statusCard.content
         placedTimeLabel.text = DateConverter.intervalStringFrom(date: statusCard.dateOfCreate)
+
         avatarImage.sd_setImage(with: statusCard.account.avatarUrl, placeholderImage: UIImage(named: "pict_default.png"))
 
         if statusCard.mediaAttachments.count > 0 {
@@ -29,4 +30,5 @@ class StatusCardCell: UITableViewCell {
             accessoryType = .none
         }
     }
+
 }

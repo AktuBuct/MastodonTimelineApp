@@ -38,6 +38,12 @@ class WallTableViewController: UITableViewController {
         }
     }
 
+}
+
+private typealias Handlers = WallTableViewController
+
+fileprivate extension Handlers {
+
     @objc private func updateStatuses() {
         view.isUserInteractionEnabled = false
 
@@ -50,7 +56,8 @@ class WallTableViewController: UITableViewController {
 
 }
 
-typealias ConfigureInterface = WallTableViewController
+private typealias ConfigureInterface = WallTableViewController
+
 private extension ConfigureInterface {
 
     func setupRefreshControl() {
@@ -64,7 +71,6 @@ private extension ConfigureInterface {
 extension WallTableViewController: DZNEmptyDataSetSource {
 
     func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString? {
-
 
         let text = "No results"
         let attributes = [
