@@ -19,7 +19,7 @@ class StatusCardCell: UITableViewCell {
 
         nameLabel.text = statusCard.account.displayName
         acctLabel.text = "@" + statusCard.account.acct
-        contentLabel.attributedText = statusCard.content
+        contentLabel.attributedText = statusCard.content.makeAttributedStringFromHtml()
         placedTimeLabel.text = DateConverter.intervalStringFrom(date: statusCard.dateOfCreate)
 
         avatarImage.sd_setImage(with: statusCard.account.avatarUrl, placeholderImage: UIImage(named: "pict_default.png"))

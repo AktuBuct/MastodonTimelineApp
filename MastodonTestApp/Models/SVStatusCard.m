@@ -52,9 +52,7 @@ static NSString *content = @"content";
         self.spoilerText = response[spoiler];
         self.cardId = response[cardId];
         self.dateOfCreate = [DateConverter dateFromString:response[date]];
-
-        NSAttributedString *str = [DataManager.sharedManager makeAttributedStringFrom:response[content]];
-        self.content = str;
+        self.content = response[content];;
 
         if ([response[emojis] isKindOfClass:[NSArray class]]) {
             self.emojis = response[emojis];

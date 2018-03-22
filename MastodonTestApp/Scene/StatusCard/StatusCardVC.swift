@@ -25,12 +25,15 @@ class StatusCardVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = DataManager.sharedManager.selectedCard?.account.displayName
+        let card = DataManager.sharedManager.selectedCard
+        navigationItem.title = card?.account.displayName
+
         collectionViewDataSource.rootController = self
         collectionView.dataSource = collectionViewDataSource
         collectionView.delegate = collectionViewDataSource
         configureCollectionView()
-        textContentView.attributedText = DataManager.sharedManager.selectedCard?.content
+
+        textContentView.attributedText = card?.content.makeAttributedStringFromHtml()
         textContentView.isEditable = false
     }
 

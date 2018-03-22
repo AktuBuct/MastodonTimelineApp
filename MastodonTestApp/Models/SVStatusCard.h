@@ -18,7 +18,7 @@
 @property (copy, nonatomic) NSString *spoilerText;
 @property (copy, nonatomic) NSString *cardId;
 @property (strong, nonatomic) NSDate *dateOfCreate;
-@property (copy, nonatomic) NSAttributedString *content;
+@property (copy, nonatomic) NSString *content;
 
 - (instancetype)initWithServerResponce:(NSDictionary *) response;
 
