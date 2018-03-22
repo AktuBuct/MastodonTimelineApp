@@ -15,6 +15,7 @@ class DataManager: NSObject {
 
     var wallCards = [SVStatusCard]()
     var selectedCard: SVStatusCard?
+    var selectedImageUrl: URL?
 
     func getStatusCards(with completionHandler: @escaping (_ success:Bool) -> Void) {
 

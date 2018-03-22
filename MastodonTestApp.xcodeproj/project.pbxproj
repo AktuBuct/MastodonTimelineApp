@@ -25,6 +25,7 @@
 		27C3F1A520632D4B0092B1CE /* StatusCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C3F1A420632D4B0092B1CE /* StatusCardVC.swift */; };
 		27E7FC002063E35700A7C0E4 /* MediaAttachmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7FBFF2063E35700A7C0E4 /* MediaAttachmentModel.swift */; };
 		27E7FC022063ECE700A7C0E4 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7FC012063ECE700A7C0E4 /* ImageCell.swift */; };
+		27E7FC052063FBBA00A7C0E4 /* ImageVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7FC042063FBBA00A7C0E4 /* ImageVc.swift */; };
 		27FDBDB52063844500F3F7BC /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = 27FDBDB42063844500F3F7BC /* Supporting Files */; };
 		2A880F547F26DC81D2B0EFB9 /* libPods-MastodonTestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E58C7D4465C546D4E11A18 /* libPods-MastodonTestApp.a */; };
 		3539C1F65C4ADAAA050650C0 /* libPods-MastodonTestAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E841A8ED53108BD3438C96 /* libPods-MastodonTestAppTests.a */; };
@@ -67,6 +68,7 @@
 		27C3F1A420632D4B0092B1CE /* StatusCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCardVC.swift; sourceTree = "<group>"; };
 		27E7FBFF2063E35700A7C0E4 /* MediaAttachmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaAttachmentModel.swift; sourceTree = "<group>"; };
 		27E7FC012063ECE700A7C0E4 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		27E7FC042063FBBA00A7C0E4 /* ImageVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVc.swift; sourceTree = "<group>"; };
 		27FDBDB42063844500F3F7BC /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supporting Files"; sourceTree = "<group>"; };
 		5520CA31D92489F4A63BABBD /* Pods-MastodonTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MastodonTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MastodonTestApp/Pods-MastodonTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		555E4FF90A64DBCB9718B3BD /* Pods-MastodonTestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MastodonTestAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MastodonTestAppTests/Pods-MastodonTestAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			children = (
 				27C3F19C20631D430092B1CE /* Wall */,
 				27C3F1A320632C200092B1CE /* StatusCard */,
+				27E7FC032063FB8F00A7C0E4 /* ImageScreen */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -210,6 +213,14 @@
 				27E7FC012063ECE700A7C0E4 /* ImageCell.swift */,
 			);
 			path = StatusCard;
+			sourceTree = "<group>";
+		};
+		27E7FC032063FB8F00A7C0E4 /* ImageScreen */ = {
+			isa = PBXGroup;
+			children = (
+				27E7FC042063FBBA00A7C0E4 /* ImageVc.swift */,
+			);
+			path = ImageScreen;
 			sourceTree = "<group>";
 		};
 		D017BEDB2C2D661A6B086710 /* Pods */ = {
@@ -434,6 +445,7 @@
 			files = (
 				27C3F1A520632D4B0092B1CE /* StatusCardVC.swift in Sources */,
 				27C3F1A2206325AC0092B1CE /* WallTableViewDataSource.swift in Sources */,
+				27E7FC052063FBBA00A7C0E4 /* ImageVc.swift in Sources */,
 				27E7FC002063E35700A7C0E4 /* MediaAttachmentModel.swift in Sources */,
 				27C3F16A2062C0D90092B1CE /* main.m in Sources */,
 				27C3F1872062D9550092B1CE /* SVAccountModel.m in Sources */,

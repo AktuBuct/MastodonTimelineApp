@@ -152,6 +152,7 @@
                                         <size key="customSize" width="200" height="200"/>
                                         <connections>
                                             <outlet property="imageView" destination="RLc-YA-F9h" id="tZU-bg-1m3"/>
+                                            <segue destination="z3F-Fd-K3L" kind="show" id="igW-hv-BTp"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -172,7 +173,7 @@
                             <constraint firstItem="Bgj-9f-sbp" firstAttribute="top" secondItem="DgK-c5-6jw" secondAttribute="bottom" constant="3" id="dzk-Z3-hLB"/>
                             <constraint firstItem="DgK-c5-6jw" firstAttribute="top" secondItem="YqJ-iW-TuR" secondAttribute="top" id="oEA-Tk-VqN"/>
                             <constraint firstItem="Bgj-9f-sbp" firstAttribute="leading" secondItem="YqJ-iW-TuR" secondAttribute="leading" constant="16" id="qiE-NL-FHf"/>
-                            <constraint firstItem="Bgj-9f-sbp" firstAttribute="height" secondItem="ueC-OR-Hun" secondAttribute="height" multiplier="0.4" id="xyu-Vt-vU9"/>
+                            <constraint firstItem="Bgj-9f-sbp" firstAttribute="height" secondItem="ueC-OR-Hun" secondAttribute="height" multiplier="0.6" id="xyu-Vt-vU9"/>
                             <constraint firstItem="DgK-c5-6jw" firstAttribute="leading" secondItem="YqJ-iW-TuR" secondAttribute="leading" constant="16" id="yfT-48-rby"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YqJ-iW-TuR"/>
@@ -185,6 +186,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JNo-Nf-r7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="236" y="286.50674662668666"/>
+        </scene>
+        <!--ImageVc-->
+        <scene sceneID="m9V-b3-WQo">
+            <objects>
+                <viewController id="z3F-Fd-K3L" userLabel="ImageVc" customClass="ImageVc" customModule="MastodonTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wHZ-YV-2Us">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mKA-zH-VTl">
+                                <rect key="frame" x="0.0" y="7.5" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mKA-zH-VTl" firstAttribute="height" secondItem="wHZ-YV-2Us" secondAttribute="height" id="6J9-ur-f2t"/>
+                            <constraint firstItem="mKA-zH-VTl" firstAttribute="width" secondItem="wHZ-YV-2Us" secondAttribute="width" id="HAO-cg-x0d"/>
+                            <constraint firstItem="mKA-zH-VTl" firstAttribute="centerX" secondItem="3Ky-kL-Iqy" secondAttribute="centerX" id="LH4-Sn-6qf"/>
+                            <constraint firstItem="mKA-zH-VTl" firstAttribute="centerY" secondItem="3Ky-kL-Iqy" secondAttribute="centerY" id="pRu-hJ-cTq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Ky-kL-Iqy"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="mKA-zH-VTl" id="RxG-up-6y9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LKE-DO-Hnk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="287"/>
         </scene>
         <!--Item-->
         <scene sceneID="Nub-bf-vAV">

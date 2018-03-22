@@ -22,9 +22,20 @@ class StatusCardImagesDataSource: NSObject, UICollectionViewDelegate, UICollecti
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! ImageCell
 
         let attachment = rootController.attachments[indexPath.row]
-        cell.imageView.sd_setImage(with: attachment.url, placeholderImage: UIImage(named: "pict_default.png"))
+        cell.imageView.sd_setImage(with: attachment.previewUrl, placeholderImage: UIImage(named: "pict_default.png"))
 
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        collectionView.isUserInteractionEnabled = false
+
+        DataManager.sharedManager.selectedImageUrl = rootController.attachments[indexPath.row].url
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            collectionView.isUserInteractionEnabled = true
+        }
     }
     
 }
