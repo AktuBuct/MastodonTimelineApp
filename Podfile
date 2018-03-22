@@ -6,6 +6,7 @@ target 'MastodonTestApp' do
   # use_frameworks!
   pod 'AFNetworking'
   pod 'SDWebImage'
+  pod 'DZNEmptyDataSet'
 
   # Pods for MastodonTestApp
 
