@@ -21,10 +21,6 @@ class WallTableViewDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
         return rootController.statusCards.count
     }
 
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-
-    }
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let statusCardCellId = "statusCardCell"
