@@ -92,9 +92,11 @@
                                         <constraint firstItem="1wc-Yg-Qfv" firstAttribute="top" secondItem="nIB-ct-8os" secondAttribute="top" id="siK-4x-0UG"/>
                                         <constraint firstItem="T1x-Jz-cl9" firstAttribute="centerY" secondItem="1wc-Yg-Qfv" secondAttribute="centerY" id="xef-VF-AW4"/>
                                         <constraint firstItem="nIB-ct-8os" firstAttribute="width" secondItem="3Tv-zv-r8c" secondAttribute="width" multiplier="0.2" id="z4h-kK-mKF"/>
-                                        <constraint firstAttribute="trailing" secondItem="T1x-Jz-cl9" secondAttribute="trailing" constant="16" id="ziy-gw-6Zv"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="T1x-Jz-cl9" secondAttribute="trailing" constant="16" id="3Nc-Jt-9B6"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="acctLabel" destination="zAr-jt-s99" id="SsJ-iw-KKf"/>
                                     <outlet property="avatarImage" destination="nIB-ct-8os" id="tun-G8-NPR"/>
