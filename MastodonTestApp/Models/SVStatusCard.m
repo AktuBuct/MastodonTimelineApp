@@ -37,6 +37,17 @@ static NSString *content = @"content";
     if (self) {
 
         self.account = [[SVAccountModel alloc] initWithServerResponce:response[account]];
+
+        NSMutableArray *attachments = [NSMutableArray array];
+
+        for (NSDictionary *attachment in response[mediaAttachments]) {
+            MediaAttachmentModel *attachmentModel = [[MediaAttachmentModel alloc] initWithServerResponce:attachment];
+            if ([attachmentModel.type isEqualToString:@"image"]) {
+                [attachments addObject:attachmentModel];
+            }
+        }
+        
+        self.mediaAttachments = attachments;
         self.url = response[url];
         self.spoilerText = response[spoiler];
         self.cardId = response[cardId];

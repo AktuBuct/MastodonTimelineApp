@@ -12,6 +12,7 @@
 @interface SVStatusCard : NSObject
 
 @property (strong, nonatomic) SVAccountModel *account;
+@property (strong, nonatomic) NSArray *mediaAttachments;
 @property (strong, nonatomic) NSURL *url;
 @property (strong, nonatomic) NSArray *emojis;
 @property (copy, nonatomic) NSString *spoilerText;
