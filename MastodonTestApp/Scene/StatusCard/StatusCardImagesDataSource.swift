@@ -13,13 +13,18 @@ class StatusCardImagesDataSource: NSObject, UICollectionViewDelegate, UICollecti
     weak var rootController: StatusCardVC!
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return rootController.attachments.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        return UICollectionViewCell()
-    }
+        let cellId = "imageCell"
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! ImageCell
 
+        let attachment = rootController.attachments[indexPath.row]
+        cell.imageView.sd_setImage(with: attachment.url, placeholderImage: UIImage(named: "pict_default.png"))
+
+        return cell
+    }
     
 }

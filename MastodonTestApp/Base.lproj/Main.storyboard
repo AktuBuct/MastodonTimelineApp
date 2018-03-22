@@ -130,13 +130,29 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="CfR-sT-EaF">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="CfR-sT-EaF" customClass="ImageCell" customModule="MastodonTestApp" customModuleProvider="target">
+                                        <rect key="frame" x="71.5" y="0.0" width="200" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RLc-YA-F9h">
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="RLc-YA-F9h" firstAttribute="centerY" secondItem="CfR-sT-EaF" secondAttribute="centerY" id="12t-xN-KGh"/>
+                                            <constraint firstItem="RLc-YA-F9h" firstAttribute="width" secondItem="CfR-sT-EaF" secondAttribute="width" id="mfn-It-F0d"/>
+                                            <constraint firstItem="RLc-YA-F9h" firstAttribute="height" secondItem="CfR-sT-EaF" secondAttribute="height" id="v8b-YP-JiE"/>
+                                            <constraint firstItem="RLc-YA-F9h" firstAttribute="centerX" secondItem="CfR-sT-EaF" secondAttribute="centerX" id="ycp-29-qqq"/>
+                                        </constraints>
+                                        <size key="customSize" width="200" height="200"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="RLc-YA-F9h" id="tZU-bg-1m3"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

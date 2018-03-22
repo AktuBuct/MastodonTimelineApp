@@ -15,11 +15,20 @@ class StatusCardVC: UIViewController {
 
     private let collectionViewDataSource = StatusCardImagesDataSource()
 
+    var attachments: [MediaAttachmentModel] {
+        guard let result = DataManager.sharedManager.selectedCard?.mediaAttachments as? [MediaAttachmentModel] else {
+            return [MediaAttachmentModel]()
+        }
+        return result
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.title = DataManager.sharedManager.selectedCard?.account.displayName
         collectionViewDataSource.rootController = self
+        collectionView.dataSource = collectionViewDataSource
+        collectionView.delegate = collectionViewDataSource
         textContentView.attributedText = DataManager.sharedManager.selectedCard?.content
         textContentView.isEditable = false
     }
