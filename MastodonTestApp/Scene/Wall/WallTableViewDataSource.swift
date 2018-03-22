@@ -29,11 +29,7 @@ class WallTableViewDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
 
         let statusCardCellId = "statusCardCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: statusCardCellId) as! StatusCardCell
-        cell.nameLabel.text = rootController.statusCards[indexPath.row].account.displayName
-        cell.acctLabel.text = "@" + rootController.statusCards[indexPath.row].account.acct
-        cell.contentLabel.attributedText = rootController.statusCards[indexPath.row].content
-        cell.placedTimeLabel.text = DateConverter.intervalStringFrom(date: rootController.statusCards[indexPath.row].dateOfCreate)
-        //        cell.avatarImage.image = rootController.statusCards[indexPath.row].account.avatarUrl
+        cell.configure(with: rootController.statusCards[indexPath.row])
 
         return cell
     }

@@ -15,4 +15,13 @@ class StatusCardCell: UITableViewCell {
     @IBOutlet weak var placedTimeLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
 
+
+    func configure(with statusCard: SVStatusCard) {
+
+        nameLabel.text = statusCard.account.displayName
+        acctLabel.text = "@" + statusCard.account.acct
+        contentLabel.attributedText = statusCard.content
+        placedTimeLabel.text = DateConverter.intervalStringFrom(date: statusCard.dateOfCreate)
+        avatarImage.sd_setImage(with: statusCard.account.avatarUrl, placeholderImage: UIImage(named: "pict_default.png"))
+    }
 }
