@@ -7,7 +7,8 @@ target 'MastodonTestApp' do
   pod 'AFNetworking'
   pod 'SDWebImage'
   pod 'DZNEmptyDataSet'
-
+  pod 'ReachabilitySwift'
+  
   # Pods for MastodonTestApp
 
   target 'MastodonTestAppTests' do

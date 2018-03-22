@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
   - DZNEmptyDataSet (1.8.1)
+  - ReachabilitySwift (4.1.0)
   - SDWebImage (4.3.0):
     - SDWebImage/Core (= 4.3.0)
   - SDWebImage/Core (4.3.0)
@@ -22,13 +23,15 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - DZNEmptyDataSet
+  - ReachabilitySwift
   - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
   SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
 
-PODFILE CHECKSUM: 093d1fe719dca6b53a972d2a9e96d3a6eda4a1a8
+PODFILE CHECKSUM: 3709eb9f45ae9fea9823a9f99a65604c19534cb5
 
 COCOAPODS: 1.4.0
