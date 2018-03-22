@@ -22,6 +22,8 @@ class WallTableViewController: UITableViewController {
         tableView.dataSource = tableViewDataSource
         tableView.delegate = tableViewDataSource
         tableViewDataSource.rootController = self
+        navigationItem.title = "Timeline"
+
         setupRefreshControl()
         setupActivityIndicatorView()
     }
