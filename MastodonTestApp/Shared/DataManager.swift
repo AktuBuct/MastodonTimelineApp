@@ -16,7 +16,7 @@ class DataManager: NSObject {
     var wallCards = [SVStatusCard]()
     var selectedCard: SVStatusCard?
 
-    func getStatusCards() {
+    func getStatusCards(with completionHandler: @escaping (_ success:Bool) -> Void) {
 
         guard let serverManager = SVServerManager.sharedManager() as? SVServerManager else {
             return
@@ -32,6 +32,8 @@ class DataManager: NSObject {
             })
 
             self.wallCards = allCards
+
+            completionHandler(true)
 
         }) { (error) in
 

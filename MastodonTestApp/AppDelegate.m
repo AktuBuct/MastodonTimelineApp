@@ -39,8 +39,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    [[DataManager sharedManager] getStatusCards];
-
     return YES;
 }
 
