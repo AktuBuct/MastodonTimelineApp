@@ -9,5 +9,10 @@
 import UIKit
 
 class StatusCardCell: UITableViewCell {
+    @IBOutlet weak var avatarImage: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var acctLabel: UILabel!
+    @IBOutlet weak var placedTimeLabel: UILabel!
+    @IBOutlet weak var contentLabel: UILabel!
 
 }

@@ -21,10 +21,6 @@ class WallTableViewDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
         return rootController.statusCards.count
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
-    }
-
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
 
     }
@@ -32,10 +28,14 @@ class WallTableViewDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let statusCardCellId = "statusCardCell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: statusCardCellId)
-        cell?.textLabel?.text = rootController.statusCards[indexPath.row].cardId
+        let cell = tableView.dequeueReusableCell(withIdentifier: statusCardCellId) as! StatusCardCell
+        cell.nameLabel.text = rootController.statusCards[indexPath.row].account.displayName
+        cell.acctLabel.text = "@" + rootController.statusCards[indexPath.row].account.acct
+        cell.contentLabel.text = rootController.statusCards[indexPath.row].content
+        //        cell.placedTimeLabel.text = String(rootController.statusCards[indexPath.row].dateOfCreate)
+        //        cell.avatarImage.image = rootController.statusCards[indexPath.row].account.avatarUrl
 
-        return cell!
+        return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
