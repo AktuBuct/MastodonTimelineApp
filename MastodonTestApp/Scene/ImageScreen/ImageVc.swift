@@ -9,7 +9,7 @@
 import UIKit
 import SDWebImage
 
-class ImageVc: UIViewController {
+class ImageVc: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
 
@@ -18,4 +18,7 @@ class ImageVc: UIViewController {
         imageView.sd_setImage(with: DataManager.sharedManager.selectedImageUrl, placeholderImage:UIImage(named: "pict_default.png"))
     }
 
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView
+    }
 }

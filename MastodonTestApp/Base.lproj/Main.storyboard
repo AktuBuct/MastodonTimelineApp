@@ -197,16 +197,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mKA-zH-VTl">
-                                <rect key="frame" x="0.0" y="7.5" width="375" height="667"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="6" translatesAutoresizingMaskIntoConstraints="NO" id="sf4-2n-Fd3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mKA-zH-VTl">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mKA-zH-VTl" firstAttribute="centerX" secondItem="sf4-2n-Fd3" secondAttribute="centerX" id="ByE-D5-0J4"/>
+                                    <constraint firstAttribute="trailing" secondItem="mKA-zH-VTl" secondAttribute="trailing" id="IKU-OG-O8C"/>
+                                    <constraint firstAttribute="bottom" secondItem="mKA-zH-VTl" secondAttribute="bottom" id="NUI-2b-T1h"/>
+                                    <constraint firstItem="mKA-zH-VTl" firstAttribute="leading" secondItem="sf4-2n-Fd3" secondAttribute="leading" id="a6Q-ps-Aaa"/>
+                                    <constraint firstItem="mKA-zH-VTl" firstAttribute="top" secondItem="sf4-2n-Fd3" secondAttribute="top" id="hP6-3j-XFO"/>
+                                    <constraint firstItem="mKA-zH-VTl" firstAttribute="centerY" secondItem="sf4-2n-Fd3" secondAttribute="centerY" id="jaQ-Gv-fSk"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="z3F-Fd-K3L" id="X8v-aP-dGA"/>
+                                </connections>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mKA-zH-VTl" firstAttribute="height" secondItem="wHZ-YV-2Us" secondAttribute="height" id="6J9-ur-f2t"/>
-                            <constraint firstItem="mKA-zH-VTl" firstAttribute="width" secondItem="wHZ-YV-2Us" secondAttribute="width" id="HAO-cg-x0d"/>
-                            <constraint firstItem="mKA-zH-VTl" firstAttribute="centerX" secondItem="3Ky-kL-Iqy" secondAttribute="centerX" id="LH4-Sn-6qf"/>
-                            <constraint firstItem="mKA-zH-VTl" firstAttribute="centerY" secondItem="3Ky-kL-Iqy" secondAttribute="centerY" id="pRu-hJ-cTq"/>
+                            <constraint firstItem="sf4-2n-Fd3" firstAttribute="top" secondItem="3Ky-kL-Iqy" secondAttribute="top" id="apD-xr-dud"/>
+                            <constraint firstAttribute="trailing" secondItem="sf4-2n-Fd3" secondAttribute="trailing" id="g6J-aO-0ht"/>
+                            <constraint firstItem="sf4-2n-Fd3" firstAttribute="bottom" secondItem="3Ky-kL-Iqy" secondAttribute="bottom" id="qqW-8t-bu1"/>
+                            <constraint firstItem="sf4-2n-Fd3" firstAttribute="leading" secondItem="wHZ-YV-2Us" secondAttribute="leading" id="sAw-ri-BXc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Ky-kL-Iqy"/>
                     </view>
@@ -218,11 +234,11 @@
             </objects>
             <point key="canvasLocation" x="1002" y="287"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="Nub-bf-vAV">
             <objects>
                 <navigationController id="sTX-vY-3gE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="hoA-YE-Trg"/>
+                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="hoA-YE-Trg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RZx-w6-Hau">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -235,7 +251,7 @@
             </objects>
             <point key="canvasLocation" x="-1305" y="287"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
         <scene sceneID="0TQ-wA-uMT">
             <objects>
                 <viewController id="KBg-YN-j7G" sceneMemberID="viewController">
@@ -291,7 +307,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="saX-50-aL3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="7ak-Qg-6pS"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="7ak-Qg-6pS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bc3-WF-1vJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
