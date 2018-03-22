@@ -6,6 +6,8 @@
 //  Copyright © 2018 AktuBuct. All rights reserved.
 //
 
+import UIKit
+import SDWebImage
 
 class ImageVc: UIViewController {
 

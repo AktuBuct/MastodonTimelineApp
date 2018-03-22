@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0718DBD50B4F6B1D6ACF09C1 /* Pods_MastodonTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E787C519E8C3BC1092E427E7 /* Pods_MastodonTestApp.framework */; };
 		2772134B2063CB1700CDDC72 /* StatusCardImagesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772134A2063CB1700CDDC72 /* StatusCardImagesDataSource.swift */; };
 		27C3F1562062C0D80092B1CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C3F1552062C0D80092B1CE /* AppDelegate.m */; };
 		27C3F1622062C0D90092B1CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C3F1602062C0D90092B1CE /* Main.storyboard */; };
@@ -29,8 +30,7 @@
 		27E7FC0720640EAE00A7C0E4 /* SplashVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7FC0620640EAE00A7C0E4 /* SplashVc.swift */; };
 		27E7FC0E20640F2400A7C0E4 /* SplashVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E7FC0D20640F2400A7C0E4 /* SplashVc.xib */; };
 		27FDBDB52063844500F3F7BC /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = 27FDBDB42063844500F3F7BC /* Supporting Files */; };
-		2A880F547F26DC81D2B0EFB9 /* libPods-MastodonTestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E58C7D4465C546D4E11A18 /* libPods-MastodonTestApp.a */; };
-		3539C1F65C4ADAAA050650C0 /* libPods-MastodonTestAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E841A8ED53108BD3438C96 /* libPods-MastodonTestAppTests.a */; };
+		D9DA31AE90DAF2271BC3A6D9 /* Pods_MastodonTestAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F172C397B502D8FA37400F6D /* Pods_MastodonTestAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,8 +78,8 @@
 		555E4FF90A64DBCB9718B3BD /* Pods-MastodonTestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MastodonTestAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MastodonTestAppTests/Pods-MastodonTestAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		6C14E80DCB6DB8FD15D50CC3 /* Pods-MastodonTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MastodonTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MastodonTestApp/Pods-MastodonTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		80B900F9ACA3632D9A38A739 /* Pods-MastodonTestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MastodonTestAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MastodonTestAppTests/Pods-MastodonTestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		95E58C7D4465C546D4E11A18 /* libPods-MastodonTestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MastodonTestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2E841A8ED53108BD3438C96 /* libPods-MastodonTestAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MastodonTestAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E787C519E8C3BC1092E427E7 /* Pods_MastodonTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MastodonTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F172C397B502D8FA37400F6D /* Pods_MastodonTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MastodonTestAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A880F547F26DC81D2B0EFB9 /* libPods-MastodonTestApp.a in Frameworks */,
+				0718DBD50B4F6B1D6ACF09C1 /* Pods_MastodonTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3539C1F65C4ADAAA050650C0 /* libPods-MastodonTestAppTests.a in Frameworks */,
+				D9DA31AE90DAF2271BC3A6D9 /* Pods_MastodonTestAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +105,8 @@
 		0995DCE713A4DB6206102E8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				95E58C7D4465C546D4E11A18 /* libPods-MastodonTestApp.a */,
-				C2E841A8ED53108BD3438C96 /* libPods-MastodonTestAppTests.a */,
+				E787C519E8C3BC1092E427E7 /* Pods_MastodonTestApp.framework */,
+				F172C397B502D8FA37400F6D /* Pods_MastodonTestAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -442,9 +442,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MastodonTestApp/Pods-MastodonTestApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

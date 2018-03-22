@@ -6,7 +6,7 @@
 //  Copyright © 2018 AktuBuct. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class StatusCardImagesDataSource: NSObject, UICollectionViewDelegate, UICollectionViewDataSource {
 
