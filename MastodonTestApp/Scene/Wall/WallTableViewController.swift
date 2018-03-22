@@ -21,6 +21,7 @@ class WallTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.dataSource = tableViewDataSource
         tableView.delegate = tableViewDataSource
+        tableView.emptyDataSetSource = self
         tableViewDataSource.rootController = self
         navigationItem.title = "Timeline"
 
@@ -68,6 +69,24 @@ private extension WallTableViewController {
         activityIndicatorView.color = .blue
 
         view.addSubview(activityIndicatorView)
+    }
+
+}
+
+extension WallTableViewController: DZNEmptyDataSetSource {
+
+    func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString? {
+
+
+        let text = "No results"
+        let attributes = [
+            NSAttributedStringKey.foregroundColor: UIColor.lightGray
+        ]
+        return NSAttributedString(string: text, attributes: attributes)
+    }
+
+    func verticalOffset(forEmptyDataSet scrollView: UIScrollView!) -> CGFloat {
+        return UIDevice.current.userInterfaceIdiom == .phone ? -75.0 : -120.0
     }
 
 }
