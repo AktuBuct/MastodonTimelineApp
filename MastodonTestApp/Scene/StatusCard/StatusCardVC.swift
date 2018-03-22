@@ -10,13 +10,18 @@ import UIKit
 
 class StatusCardVC: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var textContentView: UITextView!
+    @IBOutlet weak var collectionView: UICollectionView!
+
+    private let collectionViewDataSource = StatusCardImagesDataSource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        label.text = DataManager.sharedManager.selectedCard?.cardId
-        
+        navigationItem.title = DataManager.sharedManager.selectedCard?.account.displayName
+        collectionViewDataSource.rootController = self
+        textContentView.attributedText = DataManager.sharedManager.selectedCard?.content
+        textContentView.isEditable = false
     }
 
 }
