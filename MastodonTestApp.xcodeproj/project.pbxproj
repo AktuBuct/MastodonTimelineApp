@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0718DBD50B4F6B1D6ACF09C1 /* Pods_MastodonTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E787C519E8C3BC1092E427E7 /* Pods_MastodonTestApp.framework */; };
 		2772134B2063CB1700CDDC72 /* StatusCardImagesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772134A2063CB1700CDDC72 /* StatusCardImagesDataSource.swift */; };
+		279E506B206417F900A5D3F3 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E506A206417F900A5D3F3 /* ReachabilityManager.swift */; };
 		27C3F1562062C0D80092B1CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C3F1552062C0D80092B1CE /* AppDelegate.m */; };
 		27C3F1622062C0D90092B1CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C3F1602062C0D90092B1CE /* Main.storyboard */; };
 		27C3F1642062C0D90092B1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C3F1632062C0D90092B1CE /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		2772134A2063CB1700CDDC72 /* StatusCardImagesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCardImagesDataSource.swift; sourceTree = "<group>"; };
+		279E506A206417F900A5D3F3 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		27C3F1512062C0D80092B1CE /* MastodonTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MastodonTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C3F1542062C0D80092B1CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27C3F1552062C0D80092B1CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		27C3F19920631B260092B1CE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				279E506A206417F900A5D3F3 /* ReachabilityManager.swift */,
 				27C3F195206315C90092B1CE /* DateConverter.swift */,
 				27C3F19D20631DCE0092B1CE /* DataManager.swift */,
 			);
@@ -468,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27C3F1A520632D4B0092B1CE /* StatusCardVC.swift in Sources */,
+				279E506B206417F900A5D3F3 /* ReachabilityManager.swift in Sources */,
 				27C3F1A2206325AC0092B1CE /* WallTableViewDataSource.swift in Sources */,
 				27E7FC052063FBBA00A7C0E4 /* ImageVc.swift in Sources */,
 				27E7FC002063E35700A7C0E4 /* MediaAttachmentModel.swift in Sources */,
