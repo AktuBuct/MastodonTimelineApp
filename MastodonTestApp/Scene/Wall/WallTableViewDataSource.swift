@@ -32,7 +32,7 @@ class WallTableViewDataSource: NSObject, UITableViewDataSource, UITableViewDeleg
         cell.nameLabel.text = rootController.statusCards[indexPath.row].account.displayName
         cell.acctLabel.text = "@" + rootController.statusCards[indexPath.row].account.acct
         cell.contentLabel.text = rootController.statusCards[indexPath.row].content
-        //        cell.placedTimeLabel.text = String(rootController.statusCards[indexPath.row].dateOfCreate)
+        cell.placedTimeLabel.text = DateConverter.intervalStringFrom(date: rootController.statusCards[indexPath.row].dateOfCreate)
         //        cell.avatarImage.image = rootController.statusCards[indexPath.row].account.avatarUrl
 
         return cell

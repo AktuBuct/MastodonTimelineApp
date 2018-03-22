@@ -19,4 +19,23 @@ class DateConverter: NSObject {
         return dateFormatter.date(from: dateString)
     }
 
+    static func intervalStringFrom(date: Date) -> String? {
+
+        let interval = -NSInteger(date.timeIntervalSinceNow)
+
+        let seconds = interval % 60
+        let minutes = (interval / 60) % 60
+        let hours = (interval / 3600)
+
+        if hours >= 1 {
+            return "\(hours)h"
+        } else if minutes >= 1 {
+            return "\(minutes)m"
+        } else if seconds >= 10 {
+            return "\(seconds)s"
+        } else {
+            return "now"
+        }
+    }
+
 }
