@@ -35,7 +35,7 @@ class WallTableViewController: UITableViewController {
         super.viewWillAppear(animated)
 
         if DataManager.sharedManager.selectedCard == nil {
-            updateStatuses()
+            tableView.reloadData()
         } else {
             DataManager.sharedManager.selectedCard = nil
         }
