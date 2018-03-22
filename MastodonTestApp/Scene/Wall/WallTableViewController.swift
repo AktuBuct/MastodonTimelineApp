@@ -53,8 +53,8 @@ class WallTableViewController: UITableViewController {
     }
 
 }
-
-private extension WallTableViewController {
+typealias ConfigureInterface = WallTableViewController
+private extension ConfigureInterface {
 
     func setupRefreshControl() {
         refreshControl = UIRefreshControl()
