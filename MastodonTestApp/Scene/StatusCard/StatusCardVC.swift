@@ -29,8 +29,25 @@ class StatusCardVC: UIViewController {
         collectionViewDataSource.rootController = self
         collectionView.dataSource = collectionViewDataSource
         collectionView.delegate = collectionViewDataSource
+        configureCollectionView()
         textContentView.attributedText = DataManager.sharedManager.selectedCard?.content
         textContentView.isEditable = false
     }
 
+}
+
+private extension StatusCardVC {
+
+    func configureCollectionView() {
+        let minSize = min(view.bounds.height, view.bounds.width)
+        let cellSize = CGSize(width:minSize , height:minSize)
+
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical //.horizontal
+        layout.itemSize = cellSize
+        layout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
+        layout.minimumLineSpacing = 8.0
+        layout.minimumInteritemSpacing = 1.0
+        collectionView.setCollectionViewLayout(layout, animated: true)
+    }
 }
