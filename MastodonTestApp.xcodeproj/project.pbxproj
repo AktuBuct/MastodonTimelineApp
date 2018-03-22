@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		0718DBD50B4F6B1D6ACF09C1 /* Pods_MastodonTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E787C519E8C3BC1092E427E7 /* Pods_MastodonTestApp.framework */; };
 		2772134B2063CB1700CDDC72 /* StatusCardImagesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772134A2063CB1700CDDC72 /* StatusCardImagesDataSource.swift */; };
+		27855F932064453A000C2191 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 27855F9220644539000C2191 /* Models */; };
+		27855F962064459F000C2191 /* SVServerManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27855F952064459F000C2191 /* SVServerManagerTest.swift */; };
+		27855F9920644AE5000C2191 /* DateConverterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27855F9820644AE5000C2191 /* DateConverterTest.swift */; };
 		279E506B206417F900A5D3F3 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E506A206417F900A5D3F3 /* ReachabilityManager.swift */; };
-		279E507F2064361800A5D3F3 /* MediaAttachmentModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E507E2064361800A5D3F3 /* MediaAttachmentModelTest.swift */; };
 		27C3F1562062C0D80092B1CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C3F1552062C0D80092B1CE /* AppDelegate.m */; };
 		27C3F1622062C0D90092B1CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C3F1602062C0D90092B1CE /* Main.storyboard */; };
 		27C3F1642062C0D90092B1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C3F1632062C0D90092B1CE /* Assets.xcassets */; };
@@ -46,9 +48,11 @@
 
 /* Begin PBXFileReference section */
 		2772134A2063CB1700CDDC72 /* StatusCardImagesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCardImagesDataSource.swift; sourceTree = "<group>"; };
+		27855F9220644539000C2191 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
+		27855F952064459F000C2191 /* SVServerManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVServerManagerTest.swift; sourceTree = "<group>"; };
+		27855F9820644AE5000C2191 /* DateConverterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverterTest.swift; sourceTree = "<group>"; };
 		279E506A206417F900A5D3F3 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		279E507A2064352800A5D3F3 /* MastodonTestAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MastodonTestAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		279E507E2064361800A5D3F3 /* MediaAttachmentModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MediaAttachmentModelTest.swift; path = MastodonTestAppTests/Models/MediaAttachmentModelTest.swift; sourceTree = SOURCE_ROOT; };
 		27C3F1512062C0D80092B1CE /* MastodonTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MastodonTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C3F1542062C0D80092B1CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27C3F1552062C0D80092B1CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +118,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		27855F942064457E000C2191 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				27855F952064459F000C2191 /* SVServerManagerTest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		27855F9720644A9F000C2191 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				27855F9820644AE5000C2191 /* DateConverterTest.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		279E506C2064199900A5D3F3 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,15 +148,6 @@
 				279E507A2064352800A5D3F3 /* MastodonTestAppTests-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		279E507D2064352F00A5D3F3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				279E507E2064361800A5D3F3 /* MediaAttachmentModelTest.swift */,
-			);
-			name = Models;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		27C3F1482062C0D80092B1CE = {
@@ -181,7 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				27C3F1732062C0D90092B1CE /* MastodonTestAppTests.m */,
-				279E507D2064352F00A5D3F3 /* Models */,
+				27855F9220644539000C2191 /* Models */,
+				27855F942064457E000C2191 /* Network */,
+				27855F9720644A9F000C2191 /* Shared */,
 				279E5079206434E100A5D3F3 /* Supporting Files */,
 				27C3F1752062C0D90092B1CE /* Info.plist */,
 			);
@@ -379,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27855F932064453A000C2191 /* Models in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,7 +536,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27C3F1742062C0D90092B1CE /* MastodonTestAppTests.m in Sources */,
-				279E507F2064361800A5D3F3 /* MediaAttachmentModelTest.swift in Sources */,
+				27855F962064459F000C2191 /* SVServerManagerTest.swift in Sources */,
+				27855F9920644AE5000C2191 /* DateConverterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
