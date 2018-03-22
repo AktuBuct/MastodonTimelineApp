@@ -44,7 +44,6 @@ static NSString *headerStatistic = @"header_statistic";
         self.acct = response[acctKey];
         self.displayName = response[displayName];
         self.note = response[note];
-
     }
     return self;
 }

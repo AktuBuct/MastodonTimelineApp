@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 private enum SerializationKey: String {
     case attachmentId = "id"
     case type = "type"

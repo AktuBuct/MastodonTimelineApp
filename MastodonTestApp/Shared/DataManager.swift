@@ -18,26 +18,26 @@ class DataManager: NSObject {
     var selectedImageUrl: URL?
 
     func getStatusCards(with completionHandler: @escaping (_ success:Bool) -> Void) {
-
+        
         guard let serverManager = SVServerManager.sharedManager() as? SVServerManager else {
             return
         }
-
+        
         serverManager.getPublicStatuCards(success: { (response) in
-
+            
             var allCards = [SVStatusCard]()
-
+            
             response?.forEach({ (card) in
                 let statusCard = SVStatusCard.init(serverResponce: card as? [AnyHashable: Any])
                 if statusCard != nil { allCards += [statusCard!] }
             })
-
+            
             self.wallCards = allCards
-
+            
             completionHandler(true)
-
+            
         }) { (error) in
-
+            
         }
     }
 
@@ -48,9 +48,9 @@ class DataManager: NSObject {
         do {
             return try NSAttributedString(data: encodedData, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil)
         } catch let error as NSError {
-                        print(error.localizedDescription)
-                        return nil
-                    }
+            print(error.localizedDescription)
+            return nil
+        }
     }
-
+    
 }

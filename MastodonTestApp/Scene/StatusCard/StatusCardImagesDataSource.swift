@@ -37,5 +37,5 @@ class StatusCardImagesDataSource: NSObject, UICollectionViewDelegate, UICollecti
             collectionView.isUserInteractionEnabled = true
         }
     }
-    
+
 }

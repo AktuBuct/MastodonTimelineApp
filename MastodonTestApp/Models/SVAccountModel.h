@@ -22,8 +22,6 @@
 @property (copy, nonatomic) NSString *displayName;
 @property (copy, nonatomic) NSString *note;
 
-
-
 - (instancetype)initWithServerResponce:(NSDictionary *) response;
 
 @end

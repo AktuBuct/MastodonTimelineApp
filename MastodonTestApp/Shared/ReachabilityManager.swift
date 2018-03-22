@@ -23,7 +23,7 @@ class ReachabilityManager {
     @objc fileprivate func reachabilityChanged() {
 
         guard let reachability = reachability else { return }
-        
+
         switch reachability.connection {
         case .wifi, .cellular:
             rootController?.loadData()
@@ -64,4 +64,3 @@ class ReachabilityManager {
         alert = pending
     }
 }
-
