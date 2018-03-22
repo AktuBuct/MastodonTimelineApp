@@ -16,7 +16,6 @@
 		27C3F1802062C1400092B1CE /* SVServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C3F17F2062C1400092B1CE /* SVServerManager.m */; };
 		27C3F1842062D5CD0092B1CE /* SVStatusCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C3F1832062D5CD0092B1CE /* SVStatusCard.m */; };
 		27C3F1872062D9550092B1CE /* SVAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C3F1862062D9550092B1CE /* SVAccountModel.m */; };
-		27C3F192206302AA0092B1CE /* SerializationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C3F191206302AA0092B1CE /* SerializationKeys.swift */; };
 		27C3F196206315C90092B1CE /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C3F195206315C90092B1CE /* DateConverter.swift */; };
 		27C3F19B20631D3B0092B1CE /* WallTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C3F19A20631D3B0092B1CE /* WallTableViewController.swift */; };
 		27C3F19E20631DCE0092B1CE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C3F19D20631DCE0092B1CE /* DataManager.swift */; };
@@ -56,7 +55,6 @@
 		27C3F1832062D5CD0092B1CE /* SVStatusCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVStatusCard.m; sourceTree = "<group>"; };
 		27C3F1852062D9550092B1CE /* SVAccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVAccountModel.h; sourceTree = "<group>"; };
 		27C3F1862062D9550092B1CE /* SVAccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVAccountModel.m; sourceTree = "<group>"; };
-		27C3F191206302AA0092B1CE /* SerializationKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializationKeys.swift; sourceTree = "<group>"; };
 		27C3F195206315C90092B1CE /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
 		27C3F19A20631D3B0092B1CE /* WallTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallTableViewController.swift; sourceTree = "<group>"; };
 		27C3F19D20631DCE0092B1CE /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 		27C3F1812062D59E0092B1CE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				27C3F191206302AA0092B1CE /* SerializationKeys.swift */,
 				27C3F1822062D5CD0092B1CE /* SVStatusCard.h */,
 				27C3F1832062D5CD0092B1CE /* SVStatusCard.m */,
 				27C3F1852062D9550092B1CE /* SVAccountModel.h */,
@@ -428,7 +425,6 @@
 			files = (
 				27C3F1A520632D4B0092B1CE /* StatusCardVC.swift in Sources */,
 				27C3F1A2206325AC0092B1CE /* WallTableViewDataSource.swift in Sources */,
-				27C3F192206302AA0092B1CE /* SerializationKeys.swift in Sources */,
 				27C3F16A2062C0D90092B1CE /* main.m in Sources */,
 				27C3F1872062D9550092B1CE /* SVAccountModel.m in Sources */,
 				27C3F196206315C90092B1CE /* DateConverter.swift in Sources */,
@@ -597,7 +593,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MastodonTestApp/Supporting Files/MastodonTestApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -615,7 +611,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SV.MastodonTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MastodonTestApp/Supporting Files/MastodonTestApp-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
