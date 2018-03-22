@@ -41,7 +41,9 @@ static NSString *content = @"content";
         self.spoilerText = response[spoiler];
         self.cardId = response[cardId];
         self.dateOfCreate = [DateConverter dateFromString:response[date]];
-        self.content = response[content];
+
+        NSAttributedString *str = [DataManager.sharedManager makeAttributedStringFrom:response[content]];
+        self.content = str;
 
         if ([response[emojis] isKindOfClass:[NSArray class]]) {
             self.emojis = response[emojis];
