@@ -12,7 +12,7 @@
 @interface SVServerManager ()
 
 @property (strong, nonatomic) AFHTTPSessionManager *sessionManager;
-@property (strong, nonatomic) AFHTTPSessionManager *contentTypeSessionManager;
+
 @end
 
 @implementation SVServerManager
@@ -34,7 +34,7 @@
     return sharedMyManager;
 }
 
-- (void) getPublicStatuCardsWithSuccess:(SVCompletionBlock)success
+- (void) getPublicStatusCardsWithSuccess:(SVCompletionBlock)success
                           onFailure:(SVFailureBlock)failure {
 
     NSString *urlString = @"public";

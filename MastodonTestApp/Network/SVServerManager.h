@@ -15,7 +15,7 @@ typedef  void (^SVFailureBlock)(NSError *error);
 
 + (id)sharedManager;
 
-- (void) getPublicStatuCardsWithSuccess:(SVCompletionBlock)success
+- (void) getPublicStatusCardsWithSuccess:(SVCompletionBlock)success
                               onFailure:(SVFailureBlock)failure;
 
 @end

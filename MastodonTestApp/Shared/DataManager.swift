@@ -23,12 +23,12 @@ class DataManager: NSObject {
             return
         }
         
-        serverManager.getPublicStatuCards(success: { (response) in
+        serverManager.getPublicStatusCards(success: { (response) in
             
             var allCards = [SVStatusCard]()
             
             response?.forEach({ (card) in
-                let statusCard = SVStatusCard.init(serverResponce: card as? [AnyHashable: Any])
+                let statusCard = SVStatusCard(serverResponce: card as? [AnyHashable: Any])
                 if statusCard != nil { allCards += [statusCard!] }
             })
             

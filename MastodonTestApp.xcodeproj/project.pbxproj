@@ -182,7 +182,6 @@
 				27C3F19820631AE00092B1CE /* Scene */,
 				27C3F1542062C0D80092B1CE /* AppDelegate.h */,
 				27C3F1552062C0D80092B1CE /* AppDelegate.m */,
-				27C3F1602062C0D90092B1CE /* Main.storyboard */,
 				27C3F1632062C0D90092B1CE /* Assets.xcassets */,
 				27C3F1682062C0D90092B1CE /* Info.plist */,
 				27C3F1692062C0D90092B1CE /* main.m */,
@@ -228,6 +227,7 @@
 		27C3F19820631AE00092B1CE /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				27C3F1602062C0D90092B1CE /* Main.storyboard */,
 				279E506C2064199900A5D3F3 /* LaunchScreen */,
 				27E7FC0820640EB300A7C0E4 /* Splash */,
 				27C3F19C20631D430092B1CE /* Wall */,
