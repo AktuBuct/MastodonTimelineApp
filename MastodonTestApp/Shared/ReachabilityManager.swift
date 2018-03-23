@@ -12,7 +12,7 @@ import Reachability
 class ReachabilityManager {
 
     let reachability = Reachability()
-    var rootController: SplashVc?
+    weak var rootController: SplashVc?
     var alert: UIAlertController?
 
     init(with controller: SplashVc) {
