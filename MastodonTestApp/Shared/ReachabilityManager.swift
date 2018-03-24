@@ -11,27 +11,27 @@ import Reachability
 
 class ReachabilityManager {
 
+    private var alert: UIAlertController?
     let reachability = Reachability()
-    weak var rootController: SplashVc?
-    var alert: UIAlertController?
+    var action: (()->Void)?
 
-    init(with controller: SplashVc) {
+    init() {
         createReachability()
-        rootController = controller
     }
 
     @objc fileprivate func reachabilityChanged() {
 
         guard let reachability = reachability else { return }
+        action?()
 
         switch reachability.connection {
         case .wifi, .cellular:
-            rootController?.loadData()
             alert?.dismiss(animated: true, completion: nil)
             reachability.stopNotifier()
 
         case .none:
             createAlertView()
+            let rootController = UIApplication.shared.keyWindow?.rootViewController
             rootController?.present(alert!, animated: true, completion: nil)
         }
     }

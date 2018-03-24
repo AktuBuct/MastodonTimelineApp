@@ -16,8 +16,10 @@ class SplashVc: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        if reachabilityManager == nil {
-            reachabilityManager = ReachabilityManager(with: self)
+        reachabilityManager = ReachabilityManager()
+        reachabilityManager?.action = { [weak self] in
+            guard let connection = self?.reachabilityManager?.reachability?.connection else { return }
+            if connection == .wifi || connection == .cellular { self?.loadData() }
         }
     }
 
